@@ -47,6 +47,16 @@
         android:title="@string/emergency_info_title"
         android:summary="@string/summary_placeholder"/>
 
+    <!-- OTA -->
+    <Preference android:key="aicp_updates"
+        android:order="5"
+        android:title="@string/aicpupdate_settings_title"
+        android:summary="@string/aicpupdate_settings_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="org.aicp.ota"
+            android:targetClass="org.aicp.ota.activities.UpdaterActivity" />
+    </Preference>
+
     <!-- Legal information -->
     <!--Preference
         android:key="legal_container"
